@@ -1,0 +1,111 @@
+/*******************************
+General Styling
+********************************/
+
+
+body 	{font-family: 'Lato', Arial, sans-serif;
+		font-size: .909rem;
+		color: #464646;
+		background-color: white;}
+
+/*******************************
+Main Content Styling
+********************************/
+
+.about-banner		{display: flex;
+				    justify-content: center;
+				    align-items: center;
+					height: 40%;
+					background-image: url(../quota/quota_banner_lg.jpg);
+					background-repeat: no-repeat;
+					background-position: center;
+					background-attachment: fixed;}
+
+.about-banner p 	{color: #fff;
+					padding: 5rem 0rem;
+					font-weight: 100;
+					font-size: 5rem;
+					text-align: center;}
+
+.about-pic img		{border-radius: 50%;
+					margin-top: 5rem;
+					display: block;
+					margin-left: auto;
+					margin-right: auto;}
+
+.about-content		{padding: 5rem 2rem;}
+
+i  			{font-size: 1.5rem;}
+
+#topanchor 	{background-color: red;}
+
+.menu 		{padding: 0rem 1rem .5rem;
+			background-color: white;}
+
+.menu li 	{padding: 0rem .5rem;
+			float: right;}
+
+li.about 	{font-weight: 300;
+			padding: .4rem 1rem 0rem 0rem;
+			font-size: 1rem;}
+
+.menu li	{list-style-type: none;
+			display: inline-block;}
+
+.name 		{font-size: 2.7rem;
+			/*margin-top: 3rem;*/}
+
+.name li 	{list-style-type: none;}
+
+.ori 		{font-weight: 900;
+			letter-spacing: 2px;}
+.cosentino 	{font-weight: 100;
+			letter-spacing: 1px;
+			line-height: 1rem;}
+
+.quota 		{padding: 1rem 1.5rem 0rem;}
+
+.quota h1 	{font-size: 1.5rem;
+			font-weight: 700;
+			color: #ea9432;}
+
+/*.gallery	{background-color: red;}*/
+
+.sticky.is-stuck 	{-webkit-box-shadow: 1px 1px 1px -1px rgba(0,0,0,0.15);
+					-moz-box-shadow: 1px 1px 1px -1px rgba(0,0,0,0.15);
+					box-shadow: 1px 1px 10px -1px rgba(0,0,0,0.15);}
+
+.pic 		{padding: 6rem 0rem};
+
+.title-bar 	{background: none;}
+
+.footer 	{background-color: #464646;
+			color: #fff;
+			font-size: .707rem;
+			font-weight: 300;
+			text-align: center;}
+
+.footer p 	{margin-bottom: .5rem;
+			margin-top: .5rem;}
+/*******************************
+Pseudo Classes
+********************************/
+
+a:link,
+a:visited	{color: #464646;}
+
+a:hover		{color: #ea9432;}
+
+.footer a:link,
+.footer a:visited {color: white;}
+
+.footer p a:hover {color: #ea9432;}
+/*******************************
+Media Queries
+********************************/
+
+@media screen and (min-width: 768px) {
+	.about-content {padding: 5rem;}
+	.menu 		{padding: 0rem 2rem .5rem;}
+	.name li 	{display: inline-block;}
+}
