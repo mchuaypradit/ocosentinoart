@@ -46,6 +46,7 @@ $(document).ready(function(){
 
 $(document).ready(function() {
     $(".fancybox").fancybox({
+      width: 500,
       height: 1000,
     beforeShow : function() {
         var alt = this.element.find('img').attr('alt');
@@ -57,6 +58,8 @@ $(document).ready(function() {
 
   });
 });
+
+
 
 $(document).ready(function($) {
     $('a[href^="#"]').bind('click.smoothscroll', function(e) {
