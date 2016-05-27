@@ -4,7 +4,7 @@ $(document).ready(function(){
   $('.gallery').slick({
     adaptiveHeight: true,
     arrows: true,
-    dots: true,
+    dots: false,
     infinite: true,
     draggable: true,
     mobilefirst: true,
@@ -21,7 +21,7 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 2,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {
@@ -33,7 +33,7 @@ $(document).ready(function(){
       }
     },
     {
-      breakpoint: 768,
+      breakpoint: 960,
       settings: "unslick"
     }
     // You can unslick at a given breakpoint now by adding:
@@ -48,6 +48,8 @@ $(document).ready(function() {
     $(".fancybox").fancybox({
       width: 500,
       height: 1000,
+      margin: 20,
+    
     beforeShow : function() {
         var alt = this.element.find('img').attr('alt');
         
@@ -58,7 +60,6 @@ $(document).ready(function() {
 
   });
 });
-
 
 
 $(document).ready(function($) {

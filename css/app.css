@@ -2,7 +2,7 @@
 General Styling
 ********************************/
 
-
+html, body {height: 100%;}
 body 	{font-family: 'Lato', Arial, sans-serif;
 		font-size: .909rem;
 		color: #464646;
@@ -11,6 +11,52 @@ body 	{font-family: 'Lato', Arial, sans-serif;
 /*******************************
 Main Content Styling
 ********************************/
+.has-tip			{border-bottom: none;
+					cursor: inherit;}
+
+.tooltip::before {content: '';
+				  display: block;
+				  width: 0;
+				  height: 0;
+				  border: inset 0.75rem;
+				  border-color: transparent transparent #0a0a0a;
+				  border-bottom-style: solid;
+				  border-top-width: 0;
+				  bottom: 100%;
+				  position: absolute;
+				  left: 50%;
+				  -webkit-transform: translateX(-50%);
+				  -ms-transform: translateX(-50%);
+				  transform: translateX(-50%);}
+
+.quota-container			{height: 100%;
+					background-color: inherit;}
+
+.splash-page		{min-height: 100%;}
+
+.splash-menu,
+.splash-name		{height: 85px;
+					display: -webkit-box;
+					display: -ms-flexbox;
+					display: flex;
+					-webkit-box-align: center;
+					    -ms-flex-align: center;
+					        align-items: center;
+					-webkit-box-pack: center;
+					    -ms-flex-pack: center;
+					        justify-content: center;}
+.splash-name li,
+.splash-menu li		{display: inline;}
+
+.splash-menu li 	{padding-left: .5rem;}
+
+.splash-name 		{font-size: 2.5rem;}
+
+.splash-name ul,
+.splash-menu ul 	{margin: 0rem;}
+
+
+.name-menu			{padding-top: 2.5rem;}
 
 .about-banner		{display: -webkit-box;
 					display: -ms-flexbox;
@@ -20,12 +66,7 @@ Main Content Styling
 				            justify-content: center;
 				    -webkit-box-align: center;
 				        -ms-flex-align: center;
-				            align-items: center;
-					height: 20rem;
-					background-image: url(../quota/quota_banner_lg.jpg);
-					background-repeat: no-repeat;
-					background-position: center;
-					background-attachment: scroll;}
+				            align-items: center;}
 				
 
 .about-banner p 	{color: #fff;
@@ -38,7 +79,16 @@ Main Content Styling
 					margin-left: auto;
 					margin-right: auto;}
 
-.about-content		{padding: 5rem 2rem;}
+.about-name			{font-size: 2.7rem;
+					margin-top: 3rem;
+					padding-bottom: 0rem;}
+
+.about-content		{padding: 1rem 2rem;}
+
+.about-content h1 	{font-size: 1rem;
+				    font-weight: 700;
+				    letter-spacing: .3rem;
+				    color: #ea9432;}
 
 .delancey-banner	{margin-bottom: .5rem;}
 
@@ -48,23 +98,37 @@ Main Content Styling
     padding: 0rem .5rem .5rem;
 }
 
-.menu {
-    padding: 0rem 0rem .5rem;
-}
+.main-menu {padding: 0rem 0rem .5rem;}
 
-.menu li 	{padding: 0rem .5rem;
-			float: right;}
+.main-menu li 	{padding: 0rem .5rem;
+				float: right;
+				list-style-type: none;}
+
+.active-link {font-weight: 700;
+			 color: #ea9432;}
 
 li.link 	{font-weight: 300;
-			font-size: .909rem;}
+			font-size: .909rem;
+			padding: 0rem .6rem 0rem 0rem;}
 
 .menu li	{list-style-type: none;
 			display: inline-block;}
 
 .name 		{font-size: 2.7rem;
-			/*margin-top: 3rem;*/}
+			margin-top: 3rem;
+			margin-bottom: 2rem;
+			/*background-color: red;*/}
 
+.about-name li,
 .name li 	{list-style-type: none;}
+
+.essay-title	{font-size: 2rem;
+				font-weight: 100;
+				text-align: center;
+				letter-spacing: 6px;
+				color: #000;}
+
+.essay-content {padding: 0rem 1rem;}
 
 .ori 		{font-weight: 900;
 			letter-spacing: 2px;}
@@ -72,15 +136,22 @@ li.link 	{font-weight: 300;
 			letter-spacing: 1px;
 			line-height: 1rem;}
 
-.quota 		{padding: 1rem 1.5rem 0rem;}
+.quota 		{padding: 0rem 1.5rem 3rem;}
 
-.quota h1 	{font-size: 1.5rem;
+.quota h1 	{font-size: 1rem;
 			font-weight: 700;
+			letter-spacing: .3rem;
 			color: #ea9432;}
+
+p.line 		{word-spacing: 1px;}
+
+.line 		{display: inline;}
 
 /*.slider {width: 80%;}*/
 
-.gallery .column	{text-align: center;}
+.gallery .column	{text-align: center;
+					padding-bottom: 1rem;}
+
 
 figcaption	{font-size: .75rem;
 			color: black;}
@@ -96,7 +167,9 @@ figcaption	{font-size: .75rem;
 			color: #fff;
 			font-size: .707rem;
 			font-weight: 300;
-			text-align: center;}
+			text-align: center;
+			position: fixed;
+			bottom: 0;}
 
 .footer p 	{margin-bottom: .5rem;
 			margin-top: .5rem;}
@@ -117,28 +190,60 @@ a:hover		{color: #ea9432;}
 Media Queries
 ********************************/
 
+
 @media screen and (min-width: 768px) {
-	.about-content {padding: 5rem;}
-	.menu 		{padding: 0rem 2rem .5rem;}
-	.name		{font-size: 3rem;}
+
+	.about-content {padding: 2rem 4rem;}
+
+	.about-name	{font-size: 3rem;
+				margin-top: 0rem;
+				margin-bottom: 0rem;}
+
+	.name		{font-size: 3rem;
+				margin-top: 4rem;
+				margin-bottom: 0rem;}
+
+	.about-top	{padding-top: 2rem;}
+
+	.about-name li,
 	.name li 	{display: inline-block;}
+
 	.pic 		{padding: 4rem 0rem};
+
+	li.link 	{padding: 0rem 1rem 0rem 0rem;}
+
+	.essay-content,
+	.quota		{margin-bottom: 3rem;
+				padding-top: 1rem;}
 	
 }
 
 @media screen and (min-width: 1024px) {
-	.about-banner		{display: -webkit-box;
-						display: -ms-flexbox;
-						display: flex;
-					    -webkit-box-pack: center;
-					        -ms-flex-pack: center;
-					            justify-content: center;
-					    -webkit-box-align: center;
-					        -ms-flex-align: center;
-					            align-items: center;
-						height: 20rem;
-						background-image: url(../quota/quota_banner_lg.jpg);
-						background-repeat: no-repeat;
-						background-position: center;
-						background-attachment: fixed;}
+	.quota-container	{display: -webkit-box;display: -ms-flexbox;display: flex;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+				-webkit-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;}
+	.essay-title		{padding: 2rem;}
+	.essay-content	{padding: 0rem 5rem 2rem;}
+	.about-content 		{padding: 4rem 2rem 2rem 0rem;}
+	.splash-menu		{-webkit-box-pack: end;-ms-flex-pack: end;justify-content: flex-end;}
+	.splash-name		{-webkit-box-pack: start;-ms-flex-pack: start;}
+	.name				{font-size: 3rem;
+						margin-top: 0rem;}
+	.gallery			{margin-top: 1rem;}
+	li.link 	{padding: 0rem 1rem 0rem 0rem;}
+}
+
+@media screen and (min-width: 1440px) {
+	.quota-container	{display: -webkit-box;display: -ms-flexbox;display: flex;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+				-webkit-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;}
+	.gallery	{margin-top: 3rem;}
 }
