@@ -83,7 +83,8 @@ Main Content Styling
 					margin-top: 3rem;
 					padding-bottom: 0rem;}
 
-.about-content		{padding: 2rem 2rem 1rem;}
+.about-content		{padding: 0rem 2rem 2rem;
+					word-spacing: 1px;}
 
 .about-content h1 	{font-size: 1rem;
 				    font-weight: 700;
@@ -128,7 +129,7 @@ li.link 	{font-weight: 300;
 				letter-spacing: 6px;
 				color: #000;}
 
-.essay-title p {margin-top: 1rem;}
+.essay-title p {margin-top: 5rem;}
 
 .essay-content {padding: 0rem 1rem;}
 
@@ -195,10 +196,10 @@ Media Queries
 
 @media screen and (min-width: 768px) {
 
-	.about-content {padding: 2rem 4rem;}
+	.about-content {padding: 2rem 3rem;}
 
 	.about-name	{font-size: 3rem;
-				margin-top: 4rem;
+				margin-top: 2rem;
 				margin-bottom: 0rem;}
 
 	.name		{font-size: 3rem;
@@ -219,23 +220,26 @@ Media Queries
 }
 
 @media screen and (min-width: 1024px) {
-	.quota-container	{display: -webkit-box;display: -ms-flexbox;display: flex;
-				-webkit-box-align: center;
-				    -ms-flex-align: center;
-				        align-items: center;
-				-webkit-box-pack: center;
-				    -ms-flex-pack: center;
-				        justify-content: center;}
+	.top-bar 			{padding: 0rem 2.25rem .5rem;}
+	.about-container	{display: -webkit-box;display: -ms-flexbox;display: flex;
+						-webkit-box-align: center;
+						    -ms-flex-align: center;
+						        align-items: center;
+						-webkit-box-pack: center;
+						    -ms-flex-pack: center;
+						        justify-content: center;}	 
 	.essay-title		{padding: 2rem;}
-	.essay-content	{padding: 0rem 5rem 2rem;}
+	.essay-title p 		{margin-top: 0rem;}
+	.essay-content		{padding: 0rem 5rem 2rem;}
 	.about-content 		{padding: 4rem 2rem 2rem 0rem;}
 	.splash-menu		{-webkit-box-pack: end;-ms-flex-pack: end;justify-content: flex-end;}
 	.splash-name		{-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;}
 	.name				{font-size: 3rem;
 						margin-top: 0rem;}
 	.gallery			{margin-top: 5rem;}
-	li.link 	{padding: 0rem 1rem 0rem 0rem;}
-	.about-top {padding-top: 5rem;}
+	li.link 			{padding: 0rem 1rem 0rem 0rem;}
+	.about-top 			{padding-top: 5rem;
+						margin-bottom: 2.9rem;}
 }
 
 @media screen and (min-width: 1440px) {
@@ -246,5 +250,6 @@ Media Queries
 				-webkit-box-pack: center;
 				    -ms-flex-pack: center;
 				        justify-content: center;}
+			        
 	.gallery	{margin-top: 3rem;}
 }
